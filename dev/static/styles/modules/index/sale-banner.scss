@@ -1,0 +1,94 @@
+.sale-banner {
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  margin-top: 24px;
+  overflow: hidden;
+  height: auto;
+  max-height: 209px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  box-shadow: 0px 4px 6px rgba(91, 91, 255, 0.25);
+
+  h3 {
+    color: $White;
+    position: absolute;
+    top: 45%;
+    font-size: $h3;
+    left: 12px;
+    b {
+      font-size: 52px;
+      line-height: 52px;
+      display: block;
+    }
+  }
+
+  p {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .sale-banner {
+    margin-bottom: 50px;
+    margin-top: 48px;
+    margin-left: 24px;
+    width: calc(100% - 48px);
+    height: 265px;
+    h3 {
+      left: 61px;
+      top: 88px;
+      font-size: 36px;
+      line-height: 36px;
+      b {
+        font-size: 36px;
+        line-height: 36px;
+        display: inline-block;
+      }
+    }
+    
+    p {
+      font-weight: 400;
+      display: inline-block;
+      position: absolute;
+      top: 136px;
+      left: 61px;
+      color: $White !important;
+      font-size: $p;
+      line-height: 21px;
+    }
+  }
+}
+
+@media(min-width: 1080px) {
+  .sale-banner {
+    height: auto;
+    margin-left: 136px;
+    margin-right: 40px;
+    width: calc(100% - 80px - 96px);
+
+    h3 {
+      left: 80px;
+      top: 42px;
+    }
+
+    p {
+      left: 80px;
+      top: 90px;
+    }
+  }
+}
+
+@media (min-width: 1191px) {
+  .sale-banner {
+    height: 174px;
+    margin-left: calc(50% - 460px);
+    margin-right: auto;
+    max-width: 1015px;
+  }
+}

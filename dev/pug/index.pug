@@ -1,0 +1,23 @@
+extends template/main
+
+
+block variables
+  - var title = 'Presentstar'
+  
+
+block content
+  include modules/index/index-header
+  include modules/index/category
+  include modules/index/banner-gift
+  include modules/index/personality
+  include modules/index/budget
+  include modules/index/sale-banner
+  include modules/index/package
+  include modules/index/rewievs
+  include modules/index/map
+  include modules/index/gift-block
+
+block script
+  script(src="/../static/js/slick.js")
+  script(src="/../static/js/index.js")
+  

@@ -1,0 +1,117 @@
+@mixin BlueBtn($width, $height) {
+  height: $height;
+  background-color: $Purple;
+  color: $White;
+  line-height: $height;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  width: $width;
+  display: block;
+  text-decoration: none;
+  &:hover{
+    background-color: $Dark_Purple;
+  }
+
+  &:disabled{
+    background-color: $Light_Blue;
+    color: $BG_Blue;
+  }
+}
+
+@mixin BlueBorderBtn($width, $height) {
+  transition: .2s;
+  height: calc(#{$height} - 4px);
+  background-color: $Purple;
+  color: $White;
+  border: 2px solid $White;
+  line-height: calc(#{$height} - 4px);
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  width: calc(#{$width} - 4px);
+  display: block;
+  text-decoration: none;
+  &:hover{
+    background-color: $Dark_Purple;
+  }
+
+  &:disabled{
+    background-color: $Light_Blue;
+    color: $BG_Blue;
+    border-color: $BG_Blue;
+  }
+}
+
+@mixin WhiteBtn($width, $height) {
+  height: $height;
+  background-color: $White;
+  color: $White;
+  line-height: $height;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  width: $width;
+  display: block;
+  text-decoration: none;
+  &:hover{
+    background-color: $Super_Light_Gray;
+  }
+
+  &:disabled{
+    background-color: $Dark_Purple;
+    color: #8383FF;
+  }
+}
+
+@mixin WhiteBorderBtn($width, $height) {
+  height: calc(#{$height} - 4px);
+  background-color: $White;
+  color: $Purple;
+  border: 2px solid $Purple !important;
+  line-height: calc(#{$height} - 4px);
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  width: calc(#{$width} - 4px);
+  display: block;
+  text-decoration: none;
+  &:hover{
+    background-color: $BG_Blue;
+  }
+
+  &:disabled{
+    background-color: $White;
+    color: $Light_Blue;
+    border-color: $Light_Blue;
+  }
+}
+
+
+//font-sizes
+
+@mixin h2_index {
+  font-size: $h4;
+  font-weight: 700;
+  line-height: 20px;
+  color: $Dark_Blue;
+  @media(min-width: 768px){
+    font-size: $h2;
+    line-height: 43px;
+  }
+}
+
+@mixin small {
+  font-size: $small;
+  color: $Dark_Gray;
+  line-height: 17px;
+  font-weight: 400;
+  @media(min-width: 768px){
+    font-size: $p;
+    line-height: 21px;
+  }
+}

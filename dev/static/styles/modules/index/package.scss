@@ -1,0 +1,129 @@
+.package-wrp {
+  margin-top: 12px;
+  padding: 40px 16px;
+  background: linear-gradient(350.51deg, #8B56E9 0%, #5B5BFF 106.05%);
+  border-radius: 8px;
+  margin-bottom: 48px;
+
+  .block-count {
+    border-color: $White;
+    background-color: $White;
+  }
+
+  .category__title-h {
+    color: $White;
+    margin-bottom: 12px;
+  }
+
+  .category__descr {
+    color: $White;
+    font-size: $p;
+    font-weight: 400;
+  }
+
+  .package {
+    margin-top: 40px;
+  }
+
+  .package__card {
+    padding: 12px;
+    width: 100%;
+    height: 138px;
+    border-radius: 8px;
+    background-color: $White;
+    margin-bottom: 16px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    b {
+      margin-top: auto;
+      display: block;
+      color: $Purple;
+      font-size: $h3;
+      line-height: 29px;
+      font-weight: 700;
+
+    }
+  }
+
+  .package__title {
+    font-size: $h4;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .package__descr {
+    font-size: $small;
+    line-height: 17px;
+    font-weight: 400;
+    height: 60px;
+  }
+
+  .package__card--1 {
+    background-image: url('../images/content/package-1.png');
+    background-size: 129px 117px;
+  }
+
+  .package__card--2 {
+    background-image: url('../images/content/package-2.png');
+    background-size: 112px 114px;
+  }
+
+  .package__card--3 {
+    background-image: url('../images/content/package-3.png');
+    background-size: 150px 130px;
+  }
+}
+
+@media (min-width: 768px) {
+  .package-wrp {
+    margin-top: 47px;
+    border-radius: 0px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    .package__card {
+      width: calc(33% - 11px);
+      height: 240px;
+      margin-bottom: 0;
+    }
+
+    .package__descr {
+      height: 157px;
+    }
+  }
+
+  .package {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+@media (min-width:1080px) {
+  .package-wrp {
+    padding-right: 40px;
+    padding-left: 40px;
+    .package {
+      margin-left: 96px;
+    }
+  }
+}
+
+@media (min-width:1191px) {
+    
+  .package-wrp{
+    padding-right: 40px;
+    padding-left: 40px;
+    .package,  .category__title-wrp{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1111px;
+    }
+
+    .package {
+      margin-left: calc(50% - 457px);
+      max-width: 1153px;
+    }
+  }
+}

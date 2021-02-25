@@ -1,0 +1,74 @@
+.gift-wrp
+  .section-line
+    img.section-line-img(src="/static/images/svg/section-line.svg")
+    img.section-line-img-desk(src="/static/images/svg/section-line-desk.svg")
+
+  .category.category--2
+    .category__title-wrp
+        .block-count
+          span 2
+        .category__title
+          p.category__title-h Выберите, кого будете одаривать:
+          p.category__descr У нас есть подарки для мужчин, женщин или пар.
+          a.category__title-link(href='#') Подробнее
+
+    .category__card-wrp
+      a.category__card.card-1-line--full(href='#')
+        .category__img-wrp
+          img(src='/static/images/content/category-2-1.jpg' alt='category-img')
+        p.category__name Мужчинам
+        p.category__count 115 подарков
+      a.category__card.card-1-line--full(href='#')
+        .category__img-wrp
+          img(src='/static/images/content/category-2-2.jpg' alt='category-img')
+        p.category__name Женщинам
+        p.category__count 102 подарка
+      a.category__card.card-1-line--full(href='#')
+        .category__img-wrp
+          img(src='/static/images/content/category-2-3.jpg' alt='category-img')
+        p.category__name Парама
+        p.category__count 68 подарков
+      a.category__card.category__card--catalog(href='#')
+        .category__img-wrp.category__img-wrp--gift
+          p Перейти в каталог
+          .catalog-btn
+            img(src='/static/images/svg/ArrowRight.svg' alt='arrowRight' width='16' height='10')
+
+    .category__more-wrp
+        button.category__more-btn(type='button')
+          span
+            img(src='/static/images/svg/down-arrow.svg' width='10' height='5' alt='arrow')
+          | Показать подарки
+
+
+  .banner-gift
+    .banner-gift__header
+      h2.banner-gift__h2 Или подарите выбор!  
+      p.banner-gift__head-p НАБОР 20 В 1
+
+    .collage-wrp
+      img.collage(src="/static/images/content/Collage.png" alt="collage")
+
+    span.banner-gift__rigth
+      .banner-gift__header--desktop
+
+      .banner-gift__list
+        .banner-gift__item
+          img(src="/static/images/svg/gift-1.svg", alt="gift-icon")
+          p.banner-gift__item-p Вы дарите 20 вариантов <br> <span>будущего события<span>
+
+        .banner-gift__item
+          img(src="/static/images/svg/gift-2.svg", alt="gift-icon")
+          p.banner-gift__item-p Получатель выбирает один, <br> <span>самый интересный вариант<span>
+
+        .banner-gift__item
+          img(src="/static/images/svg/gift-2.svg", alt="gift-icon")
+          p.banner-gift__item-p Мы организуем событие <br> <span>в удобное время<span>
+
+      a.banner-gift__link(src="#") Подобрать набор
+
+      .banner-gift__person
+        p &#128104; #[a(href="#") Мужчинам]
+        p &#128105; #[a(href="#") Женщинам]
+        p &#128104; &#128105; #[a(href="#") Парам]
+

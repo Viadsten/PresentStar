@@ -1,0 +1,44 @@
+- var navLinks = [{link: '#', name: 'Каталог'}, {link: '#', name: 'О PresentStar'}, {link: '#', name: 'Доставка и оплата'}, {link: '#', name: 'Как это работает'}, {link: '#', name: 'Активация сертификата'}, {link: '#', name: 'Отзывы'}, {link: '#', name: 'Контакты'}, {link: '#', name: 'Корпоративным клиентам'}]
+
+header.header
+  svg(style='display: none')
+    symbol#toggle-menu(viewbox='0 0 20 20')
+        path(fill-rule='evenodd' clip-rule='evenodd' d='M3 2H1V4H3V2ZM3 9H1V11H3V9ZM1 16H3V18H1V16ZM19 2H5V4H19V2ZM5 9H19V11H5V9ZM19 16H5V18H19V16Z')
+    symbol#basket-icon(viewbox='0 0 20 21')
+        path(fill-rule='evenodd' clip-rule='evenodd' d='M0.928436 2.5C0.415675 2.5 0 2.89797 0 3.38889C0 3.87981 0.415675 4.27778 0.928436 4.27778H3.74764L6.66482 13.0203C6.96776 13.6512 7.62667 14.0556 8.35198 14.0556H14.2202C14.9246 14.0556 15.5684 13.674 15.8824 13.0703L17.8029 6.71128C18.4177 5.52941 17.5198 4.14103 16.1407 4.14103H11.3808C10.8681 4.14103 10.4524 4.539 10.4524 5.02991C10.4524 5.52083 10.8681 5.9188 11.3808 5.9188H16.1407L14.2202 12.2778H8.35198L5.43479 3.53526C5.13186 2.90432 4.47294 2.5 3.74764 2.5H0.928436ZM9 17.1667C9 17.903 8.39558 18.5 7.65 18.5C6.90442 18.5 6.3 17.903 6.3 17.1667C6.3 16.4303 6.90442 15.8333 7.65 15.8333C8.39558 15.8333 9 16.4303 9 17.1667ZM14.85 18.5C15.5956 18.5 16.2 17.903 16.2 17.1667C16.2 16.4303 15.5956 15.8333 14.85 15.8333C14.1044 15.8333 13.5 16.4303 13.5 17.1667C13.5 17.903 14.1044 18.5 14.85 18.5Z')
+    symbol#basket-icon--fill(viewbox='0 0 18 16')
+        path(fill-rule='evenodd' clip-rule='evenodd' d='M0.928436 0C0.415675 0 0 0.397969 0 0.888889C0 1.37981 0.415675 1.77778 0.928436 1.77778H3.74764L6.66482 10.5203C6.96776 11.1512 7.62667 11.5556 8.35198 11.5556H14.2202C14.9246 11.5556 15.5684 11.174 15.8824 10.5703L17.8029 4.21128C18.4177 3.02941 17.5198 1.64103 16.1407 1.64103H5.63692L5.43479 1.03526C5.13186 0.404321 4.47294 0 3.74764 0H0.928436ZM9 14.6667C9 15.403 8.39558 16 7.65 16C6.90442 16 6.3 15.403 6.3 14.6667C6.3 13.9303 6.90442 13.3333 7.65 13.3333C8.39558 13.3333 9 13.9303 9 14.6667ZM14.85 16C15.5956 16 16.2 15.403 16.2 14.6667C16.2 13.9303 15.5956 13.3333 14.85 13.3333C14.1044 13.3333 13.5 13.9303 13.5 14.6667C13.5 15.403 14.1044 16 14.85 16Z')
+    symbol#search-icon(viewbox='0 0 20 21')
+        path(d='M12.7558 12.6216C13.595 11.7326 14.1067 10.5502 14.1067 9.25226C14.1067 6.48959 11.7883 4.25 8.92836 4.25C6.06843 4.25 3.75 6.48959 3.75 9.25226C3.75 12.0149 6.06843 14.2545 8.92836 14.2545C10.4447 14.2545 11.8088 13.6249 12.7558 12.6216ZM12.7558 12.6216L17.5 16.75' stroke-width='2')
+
+
+  .header__first-line
+    .header__toggle
+      svg(width='20' height='20')
+        use(xlink:href='#toggle-menu')
+    img.header__logo(src='/static/images/svg/Logo.svg')
+    .header__search-wrp
+      input.header__input(type='text' placeholder='Найдите подарки и впечатления')
+      button.search-close(type='button') Отмена
+      ul.search-results__list
+        for i in ['На новый год', 'На юбилей', 'Для мужчин']
+          li.search-results__item
+            a.search-results__link(href='#')=i
+
+    .header__user-nav
+      button.header__search-btn(type='button')
+        svg(width='20' height='20')
+          use(xlink:href='#search-icon')
+      button.header__basket-btn(type='button')
+        svg.header__basket-svg(width='20' height='20')
+          use(xlink:href='#basket-icon')
+        span.header__basket-count 0
+  .header__second-line
+    nav.header__site-nav
+      ul.header__nav-list
+        for j in navLinks
+          li
+            a.site-nav__link(href=j.link)=j.name
+        
+
+.mobile-menu-BG
