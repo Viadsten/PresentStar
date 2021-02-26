@@ -2,15 +2,47 @@
 
 $(document).ready(function () {
   var settingsSlick = {
-    slidesToShow: 3,
+    slidesToShow: 3.8,
     arrows: false,
     dots: true,
     slidesToScroll: 1,
+    accessibility: true,
+    variableWidth: false,
     infinite: false,
     responsive: [{
+      breakpoint: 2400,
+      settings: {
+        slidesToShow: 3.6
+      }
+    }, {
+      breakpoint: 2300,
+      settings: {
+        slidesToShow: 3.5
+      }
+    }, {
+      breakpoint: 2200,
+      settings: {
+        slidesToShow: 3.4
+      }
+    }, {
+      breakpoint: 2000,
+      settings: {
+        slidesToShow: 3.3
+      }
+    }, {
+      breakpoint: 1860,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 1740,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
       breakpoint: 1620,
       settings: {
-        slidesToShow: 2.7
+        slidesToShow: 2.6
       }
     }, {
       breakpoint: 1500,
@@ -56,13 +88,23 @@ $(document).ready(function () {
   }
 
   var settingsSlickGift = {
-    slidesToShow: 5,
+    slidesToShow: 6.5,
     arrows: false,
     dots: true,
     slidesToScroll: 1,
     infinite: false,
     responsive: [{
-      breakpoint: 1620,
+      breakpoint: 2300,
+      settings: {
+        slidesToShow: 5.9
+      }
+    }, {
+      breakpoint: 1960,
+      settings: {
+        slidesToShow: 5.5
+      }
+    }, {
+      breakpoint: 1780,
       settings: {
         slidesToShow: 5
       }

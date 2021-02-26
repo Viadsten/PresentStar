@@ -1,9 +1,30 @@
-.index-header--bg{
+.index-header--bg {
   background-color: $BG_Blue;
   width: 100%;
   display: block;
   padding-bottom: 24px;
 }
+.card-wrp {
+  width: 90%;
+  margin-left: 5%;
+}
+.card {
+  width: 253px;
+  height: 376px;
+}
+
+.card--1 {
+  background-color: $Light_Gray;
+}
+
+.card--2 {
+  background-color: $Dark_Gray;
+}
+
+.card--3 {
+  background-color: $Purple;
+}
+
 
 .card-wrp{
   position: relative;
@@ -52,6 +73,7 @@ border-radius: 20px;
   top: 10px;
   transform: perspective(1000px) rotate3d(0, -45, 0, 25deg) scale(1.13, 0.8);
 }
+
 
 .index-header__h2{
   font-weight: 700;
