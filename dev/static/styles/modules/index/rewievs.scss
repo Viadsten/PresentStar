@@ -248,61 +248,69 @@
     display: flex;
   }
 
-  .slick-dots {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 32px !important;
-    li {
-      cursor: pointer;
-      transition: all .2s;
-      font-size: 0;
-      height: 6px;
-      width: 40px;
-      background-color: $Super_Light_Gray;
+  .reviews {
 
-      button {
-        transition: .2s;
-        width: 34px;
-        background-color: unset;
-        border: none;
-        outline: none !important;
-      }
-
-      &:nth-child(even) {
-        margin-right: 16px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
+    .slick-dots {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-top: 32px !important;
+      li {
+        cursor: pointer;
+        transition: all .2s;
+        font-size: 0;
+        height: 6px;
+        width: 40px;
+        background-color: $Super_Light_Gray;
+  
         button {
-          margin-left: 4px;
+          transition: .2s;
+          width: 34px;
+          background-color: unset;
+          border: none;
+          outline: none !important;
         }
+  
+        &:nth-child(even) {
+          margin-right: 16px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          button {
+            margin-left: 4px;
+          }
+        }
+  
+        &:nth-child(odd) {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          
+        }
+  
+        &:nth-last-child(1) {
+          width: 36px !important;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+  
       }
-
-      &:nth-child(odd) {
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
+  
+     
+      .slick-active {
+        button {
+          background-color: $Purple;
+          z-index: 3;
+          height: 6px;
+          border-radius: 4px;
+        }
         
       }
-
-      &:nth-last-child(1) {
-        width: 36px !important;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-      }
-
     }
-
-   
-    .slick-active {
-      button {
-        background-color: $Purple;
-        z-index: 3;
-        height: 6px;
-        border-radius: 4px;
-      }
-      
-    }
+    
   }
+
+  
 }
 
 @media (min-width: 1080px) {
@@ -311,7 +319,10 @@
     max-width: 1448px;
 
     .slick-dots {
-      margin-left: 150px;
+      display: flex;
+      justify-content: center;
+      margin-right: 14% !important;
+
     }
   }
 
@@ -339,7 +350,8 @@
     overflow-y: unset !important;
     display: block;
   }
-  .slick-list {
+
+  .reviews .slick-list {
     overflow: visible !important;
   }
   .slick-track {
@@ -404,5 +416,16 @@
 
   .review__body {
     //width: 100vw;
+  }
+}
+
+@media (min-width: 2600px) {
+  .review-overflow {
+    width: 2500px;
+    padding-left: 700px;
+    margin-left: -700px;
+    &:before {
+      left: 0;
+    }
   }
 }

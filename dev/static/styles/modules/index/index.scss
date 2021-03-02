@@ -1,0 +1,68 @@
+.index-wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  order: 0;
+}
+
+.category--1 {
+  order: 1;
+}
+
+.gift-wrp {
+  order: 2;
+}
+
+.section-line--banner-gift {
+  order: 3;
+}
+
+.category--3 {
+  order: 4;
+}
+
+.sale-banner {
+  order: 5;
+}
+
+.section-line--sale-banner {
+  order: 6;
+}
+
+.package-wrp {
+  order: 7;
+}
+
+.reviews {
+  order: 8;
+}
+
+.map-wrp {
+  order: 9;
+}
+
+.gift-block {
+  order: 10;
+}
+
+.footer {
+  order: 11;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    order: 9;
+  }
+  
+  .map-wrp {
+    order: 8;
+  }
+}
+
+@media (min-width: 1190px) {
+  .category__card-wrp {
+    width: 1015px;
+  }
+}

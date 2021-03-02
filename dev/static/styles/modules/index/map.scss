@@ -1,0 +1,31 @@
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+.map-wrp {
+  margin-bottom: 48px;
+}
+
+@media (min-width:768px) {
+  .map {
+    height: 324px;
+  }
+
+  .map-wrp {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .map {
+    height: 400px;
+  }
+
+  .map-wrp {
+    .gift-block__header {
+      margin-left: calc(50vw - 482px);
+    }
+  }
+}

@@ -4,43 +4,141 @@
 
 .category.category--3
   .category__title-wrp
-      .block-count
-        span 3
-      .category__title
-        p.category__title-h Определитесь с бюджетом
-        p.category__descr У нас есть как скромные варианты, так и впечатления, достойные королей
-        a.category__title-link(href='#') Подробнее
+    .block-count
+      span 3
+    .category__title
+      p.category__title-h Определитесь с бюджетом
+      p.category__descr У нас есть как скромные варианты, так и впечатления, достойные королей
+      a.category__title-link Подробнее
+
+  .category__modal
+    .category__modal-content
+      p Экстремальные развлечения для мужчин: прыжки с парашютом, полеты в аэротрубе, за штурвалом вертолета и самолета, экскурсии с диггерами по подземельям Москвы или сафари на танке. Полет на реактивном истребителе L-39 зарядит улетной порцией адреналина. Такой подарок произведет впечатление и останется в памяти на всю жизнь. А для поклонников размеренного отдыха – царская рыбалка и охота.
+      p Экстремальные развлечения для мужчин: прыжки с парашютом, полеты в аэротрубе, за штурвалом вертолета и самолета, экскурсии с диггерами по подземельям Москвы или сафари на танке. Полет на реактивном истребителе L-39 зарядит улетной порцией адреналина. Такой подарок произведет впечатление и останется в памяти на всю жизнь. А для поклонников размеренного отдыха – царская рыбалка и охота.
+      p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto, numquam placeat non consequuntur cumque praesentium veritatis recusandae saepe labore molestiae, doloribus nobis pariatur! Cupiditate quia distinctio doloremque error ut ipsa facere fugiat mollitia facilis rem! Dolore quis, tenetur eveniet, ab est, dolorum provident consectetur labore voluptatibus deleniti blanditiis exercitationem minima illum temporibus hic? Quibusdam dolores deserunt aliquid. Ea iusto officia, accusantium ut adipisci praesentium ex doloremque labore repudiandae possimus ullam illum fugiat eum aliquam quia obcaecati nobis non beatae enim libero voluptatibus porro perferendis! Eveniet quis optio magnam id eum repellat dicta, placeat praesentium ab maiores ducimus odio tempora?
+
 
   .category__card-wrp
     a.category__card.card-1-line--full(href='#')
       .category-3__img-wrp
-        img(src='/static/images/svg/budget-1.svg' width="63" height="47" alt='category-img')
+        img(src='static/images/svg/budget-1.svg' width="63" height="47" alt='category-img')
       p.category__name До 5 000 ₽
       p.category__count 52 подарка
     a.category__card.card-1-line--full(href='#')
       .category-3__img-wrp
-        img(src='/static/images/svg/budget-2.svg' width="80" height="60" alt='category-img')
+        img(src='static/images/svg/budget-2.svg' width="80" height="60" alt='category-img')
       p.category__name 5 000 - 10 000 ₽
       p.category__count 79 подарков
     a.category__card.card-1-line--full(href='#')
       .category-3__img-wrp
-        img(src='/static/images/svg/budget-3.svg' width="128" height="59" alt='category-img')
+        img(src='static/images/svg/budget-3.svg' width="128" height="59" alt='category-img')
       p.category__name 10 000 - 15 000 ₽
       p.category__count 40 подарков
     a.category__card.card-1-line--full(href='#')
       .category-3__img-wrp
-        img(src='/static/images/svg/budget-4.svg' width="123" height="64" alt='category-img')
+        img(src='static/images/svg/budget-4.svg' width="123" height="64" alt='category-img')
       p.category__name 15 000 - 50 000 ₽
       p.category__count 46 подарков
     a.category__card.card-1-line--full(href='#')
       .category-3__img-wrp
-        img(src='/static/images/svg/budget-5.svg' width="123" height="66" alt='category-img')
+        img(src='static/images/svg/budget-5.svg' width="123" height="66" alt='category-img')
       p.category__name От 50 000 ₽
       p.category__count 19 подарков
 
   .category__more-wrp
-      button.category__more-btn(type='button')
-        span
-          img(src='/static/images/svg/down-arrow.svg' width='10' height='5' alt='arrow')
-        | Показать подарки
+    button.category__more-btn(type='button')
+      span
+        img(src='static/images/svg/down-arrow.svg' width='10' height='5' alt='arrow')
+      | Показать подарки
 
+    .modal-gift__overflow
+        .modal-gift__wrp
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]
+
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]
+
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]
+
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]
+          
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]
+
+          .modal-gift__card
+            .modal-gift__img-wrp
+              img(src="static/images/content/collage-gift.png", alt="collage-gift")
+            .modal-gift__subtitle
+              img(src="static/images/svg/blue-star.svg", width="16" height="16" alt="star")
+              p 4,7 • 380 отзывов
+            p.modal-gift__title «Яркие впечатления»
+            i 32 места проведения
+            .modal-gift__price-wrp
+              p.modal-gift__new-price 18 500 ₽
+              p.modal-gift__old-price 23 000 ₽
+            button.modal-gift__btn(type="button") #[img(src="static/images/svg/basket-icon.svg" width="18" height="16")]

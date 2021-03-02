@@ -21,6 +21,32 @@ html(lang="ru-RU")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
     <![endif]-->
   body
+    .how-it-works--bg
+      .how-it-works__modal
+        button.how-it-works__close(type="button") #[img(src='static/images/svg/Close_gray.svg' class="img-x" width="20" height="20" alt="close")]
+        h3 Как это работает?
+        .how-it-works__list
+          .how-it-works__item--1
+            span 1
+            p Вы гордо дарите сертификат на событие
+          
+          .how-it-works__item--2
+            p Доставим уже сегодня
+            span В пределах МКАД за 290 ₽, при заказе до 17.00
+
+          .how-it-works__item--1
+            span 2
+            p Получатель активируеет его в удобное время
+
+          .how-it-works__item--2.mr-auto
+            p Это можно сделать в течение года
+
+          .how-it-works__item--1
+            span 3
+            p Мы профессионально организуем событие
+
+          button.how-it-works__in-btn(type="button") Понятно
+          
     include ../modules/header/header
     main.main
       block content
