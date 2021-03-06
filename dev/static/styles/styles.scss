@@ -117,7 +117,11 @@ button { outline: none; }
   }
 }
 
-
+@media(min-width: 1080px){
+  main {
+    margin-top: 135px;
+  }
+}
 
 //Модули
 @import "modules/modules";

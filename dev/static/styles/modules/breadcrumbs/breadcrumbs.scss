@@ -1,0 +1,32 @@
+.breadcrumbs-list {
+  list-style: none;
+  padding-left: 16px !important;
+  color: $Black;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 24px !important;
+  margin-bottom: 36px !important;
+  width: 100%;
+  max-width: 1111px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (min-width: 768px) {
+  .breadcrumbs-list {
+    padding-left: 24px !important;
+  }
+}
+
+@media (min-width: 1080px) {
+  .breadcrumbs-list {
+    margin-top: 154px !important;
+    padding-left: 45px !important;
+  }
+}
+
+@media (min-width: 1202px) {
+  .breadcrumbs-list {
+    padding-left: 0px !important;
+  }
+}
